@@ -1,0 +1,12 @@
+@import "./components/stages/login/Login.scss";
+@import "./components/stages/homepage/Homepage.scss";
+@import "./components/stages/mission/Mission.scss";
+@import "./components/stages/admin/Admin.scss";
+@import "./shared/shared.style.scss";
+@import "./shared/ltr.scss";
+html,
+body,
+#root,
+.app-container {
+  height: 100%;
+}

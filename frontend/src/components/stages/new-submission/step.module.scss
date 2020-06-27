@@ -1,0 +1,19 @@
+.stepsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.stepsBetween {
+  display: block;
+  height: 2px;
+  width: 3em;
+  margin: 0.5em;
+  vertical-align: middle;
+  background: #6c63ff;
+}
+
+.steps-between.next {
+  background: #c7c6d4;
+}

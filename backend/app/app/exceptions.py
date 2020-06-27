@@ -1,0 +1,2 @@
+class MissionAlreadyAccepted(Exception):
+    pass

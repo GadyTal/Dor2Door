@@ -1,0 +1,173 @@
+.homepage-component-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 90%;
+  justify-content: space-between;
+  padding: 4vh !important;
+
+  .homepage-titles-container {
+    color: #49446e;
+    text-align: right;
+    align-self: center;
+    .title {
+      font-weight: bold;
+      font-size: 5.19vh;
+      margin-bottom: 1vh;
+      position: relative;
+    }
+  }
+
+  .missions-amount-label {
+    font-weight: 400;
+    font-size: 2.3vh;
+    text-align: center;
+  }
+
+  .stats-container {
+    display: flex;
+    color: #8e83c1;
+    text-align: right;
+    // margin-right: 10vh;
+    // margin-left: 10vh;
+    margin-left: 4vh;
+    margin-right: 4vh;
+    place-content: center;
+    .title {
+      margin-bottom: 1vh;
+      font-size: 2vh;
+    }
+    .amount {
+      font-weight: bold;
+      font-size: 5vh;
+      margin: 1vh;
+      margin-right: 0;
+    }
+  }
+
+  .right-stat-container {
+    margin-left: 8vh;
+    // text-align: right;
+  }
+  .left-stat-container {
+    // margin-left: 10vh;
+    // text-align: right;
+  }
+
+  .homepage-msg-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //text
+    color: #49446e;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  .whatsapp-msg-container {
+    background-color: white;
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #49446e;
+    font-size: 2vh;
+    border-radius: 20px;
+    width: -webkit-fill-available;
+  }
+
+  .details-buttons-container {
+    position: absolute;
+    width: 100vw;
+    height: 55vh;
+    bottom: 0px;
+    left: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    .details-button {
+      background-color: white;
+      font-size: 2.5vh;
+
+      padding: 3vh;
+      padding-right: 5vh;
+      color: #7d78ab;
+      border: solid 1px;
+      width: -webkit-fill-available;
+      display: flex;
+      align-items: center;
+      text-align: right;
+      border-color: lightgrey;
+    }
+  }
+
+  .last-mission-title {
+    text-align: right;
+    color: #49446e;
+    color: #8e83c1;
+    text-align: right;
+    margin-left: 4vh;
+    margin-right: 4vh;
+    margin-bottom: 1vh;
+    margin-top: 2vh;
+    font-size: 2vh;
+  }
+  .last-mission-container {
+    background-color: white;
+    flex-flow: row;
+    display: flex;
+    border: thin solid #e0e0e0;
+    box-sizing: border-box;
+    border-radius: 3vh;
+    padding-right: 20px;
+    align-items: center;
+    text-align: right;
+    cursor: pointer;
+    box-shadow: 0px 1px 4px rgba(108, 99, 253, 0.0323),
+      0px 7px 16px rgba(108, 99, 253, 0.0476886),
+      0px 14px 40px rgba(108, 99, 253, 0.08);
+    &:active {
+      background: #f8f8fa; /* pressed-white */
+      box-shadow: 0px 8px 16px rgba(91, 83, 220, 0.07);
+    }
+
+    .titles-container {
+      padding-right: 20px;
+
+      .title {
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 6px;
+      }
+
+      .address {
+        color: #7d78ab;
+        margin-top: 0;
+        margin-bottom: 2vh;
+      }
+    }
+    .left-arrow {
+      position: absolute;
+      float: left;
+      left: 6vh;
+    }
+  }
+
+  .main-image {
+    max-height: 30vh;
+    background-color: transparent;
+  }
+
+  .homepage-buttons-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

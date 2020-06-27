@@ -1,0 +1,28 @@
+.simple-dropdown {
+  // background: #FFFFFF;
+  // box-shadow: 1px 4px 6px rgba(102, 93, 242, 0.16);
+  // display: block;
+  // font-size: 18px;
+  box-sizing: border-box;
+  // width: 100%;
+  // border-radius: 10px;
+  // text-align: right;
+  // padding: 1em;
+  // border: 2px solid transparent;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  background: url("data:image/svg+xml,%3Csvg width='13' height='8' viewBox='0 0 13 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.5 8L0.870834 0.500001L12.1292 0.5L6.5 8Z' fill='%237C7B92'/%3E%3C/svg%3E"),
+    #f9f9f9;
+  background-repeat: no-repeat;
+  background-position: 5% center;
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  padding: 1em;
+
+  border: 2px solid #7c7b92;
+  border-radius: 8px;
+}

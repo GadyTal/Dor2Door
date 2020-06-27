@@ -1,0 +1,14 @@
+{
+  "sms.auth.message": "{} הוא קוד האימות להשלמת ההרשמה Door2dor",
+  "whatsapp.welcome.message": "שלום {}, איזה כיף שהצטרפת אלינו! \uD83D\uDE0A\nמעכשיו נשלח לך התראות ברגע שנזהה התנדבות קרובה באיזורך.\n \nבינתיים, הנה כמה קישורים שחשבנו שאולי יהיה לך בהם עניין:\n⭐ *קהילת המתנדבים שלנו בפייסבוק*:\nhttps://www.facebook.com/groups/door2dor/\n\n⭐ *האתר שלנו*:\nhttps://www.door2dor.co.il/\n\nלכל שאלה ותהייה: info@door2dor.co.il\n",
+  "whatsapp.new.assistance.message": "היי {}, יש במרחק {} מ' ממך בקשה לסיוע מ{}! \uD83D\uDE4F\nלפרטים נוספים ותיאום מועד ההתנדבות מול {}, יש ללחוץ כאן \uD83D\uDC48 \n{}",
+  "whatsapp.cancel.notifications.message": "{}, תודה שלקחת חלק בקהילה שלנו \uD83D\uDC9C\nלבקשתך, הסרנו אותך ממאגר המתנדבים הפעילים שלנו. אם משהו ישתנה בהמשך, תמיד ניתן לחזור למאגר בקלות ובמהירות דרך ההגדרות באתר.\n",
+  "whatsapp.resubscribed.message":"כיף שחזרת אלינו {}! \uD83D\uDE0A\nהכל בעצם נשאר בדיוק כמו שהיה- אנחנו שולחים לך כאן הצעות להתנדבות ממש ליד הבית. אם לא נשלח הודעה מיד, זה לא אומר ששכחנו אותך אלא שפשוט כרגע אין משהו מתאים. מבטיחים שברגע שיהיה משהו רלוונטי נודיע לך מיד :) \n\nסתם לתזכורת, הנה כל מה שצריך לדעת:\n\uD83D\uDC48 *אז איך הכל עובד?*\nhttps://www.door2dor.co.il/how-it-works\n\uD83D\uDC48 *הנחיות עדכניות של משרד הבריאות:* \nhttps://bit.ly/d2d-guidelines\n\nולסיום, כמה קישורים שחשבנו שאולי יהיה לך בהם עניין:\n⭐ *קהילת המתנדבים שלנו בפייסבוק*:\nhttps://www.facebook.com/groups/door2dor/\n\n⭐ *האתר שלנו*:\nhttps://www.door2dor.co.il/\n⭐ *ידוע לך על מישהו שצריך עזרה? טופס בקשה לסיוע*:\nhttps://bit.ly/d2d-request\nבכל שאלה ותהייה, *אנחנו כאן בשבילך* במייל- info@door2dor.co.il \uD83D\uDC9C\n*משפחת Door2Dor*",
+  "whatsapp.first.reminder.message": "היי {}, מה הולך?\nכבר עזרת ל{}? נשמח לקבל עדכון בקישור הבא \uD83D\uDC48 {}\nאם נתקלת בבעיה כלשהי, כמובן שניתן לפנות אלינו ל-info@doortodor.co.il \uD83D\uDE0A\n",
+  "whatsapp.second.reminder.message": "היי {}, מה נשמע?\nשמנו לב שעוד לא עדכנת אותנו בנוגע להתנדבות.\nאם אין באפשרותך לעזור כרגע ל{} זה בסדר גמור, אבל אנחנו צריכים לדעת כדי שנוכל לשלוח מישהו אחר במקומך. לכן, נבקש ממך לעדכן אותנו בהקדם האפשרי בקישור הבא \uD83D\uDC48 {}\n",
+  "whatsapp.welcome.message.template": "d2d welcome message",
+  "whatsapp.new.assistance.template": "d2d new assistance",
+  "whatsapp.resubscribed.template": "d2d resubscribed",
+  "whatsapp.first.reminder.template": "d2d first reminder",
+  "whatsapp.second.reminder.template": "d2d second reminder"
+}

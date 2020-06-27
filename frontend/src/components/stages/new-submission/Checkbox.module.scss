@@ -1,0 +1,26 @@
+.label {
+  cursor: pointer;
+  display: flex;
+}
+
+.text {
+  text-align: right;
+  font-weight: normal;
+
+  &.bold {
+    font-weight: bold;
+    font-size: 1.1em;
+    line-height: 1.5;
+  }
+  &.normal {
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  &.thin {
+    color: #7d78ab;
+    font-size: 1em;
+    line-height: 1.5;
+  }
+}

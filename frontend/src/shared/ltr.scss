@@ -1,0 +1,11 @@
+body[dir$="ltr"] {
+  .form-input {
+    padding: 0 10px;
+    text-align: left;
+    background-position: left;
+  }
+
+  .form-title {
+    text-align: left;
+  }
+}

@@ -1,0 +1,45 @@
+version: '3'
+services:
+  door2dor_backend:
+    build:
+      context: .
+      dockerfile: dev.dockerfile
+    links:
+      - "db:database"
+    container_name: door2dor_backend
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./backend/app/:/app
+    command: /start-reload.sh
+  db:
+    image: "postgres"
+    container_name: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 951753
+      PGDATA: /data/postgres
+    volumes:
+       - postgres:/data/postgres
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+  pgadmin:
+    container_name: pgadmin
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-dev@door2dor.co.il}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-951753}
+      PGADMIN_LISTEN_PORT: 5050
+    volumes:
+       - pgadmin:/root/.pgadmin
+    ports:
+      - "5050:5050"
+    links:
+      - "db:database"
+    restart: unless-stopped 
+
+volumes:
+    postgres:
+    pgadmin:

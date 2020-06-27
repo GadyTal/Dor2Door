@@ -1,0 +1,291 @@
+@import "../../../shared/shared.style.scss";
+
+.login-component-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: calc(100% - 2vh) !important;
+  justify-content: space-between;
+
+  button {
+    cursor: pointer;
+  }
+  .title {
+    color: #49446e;
+    font-weight: bold;
+    font-size: 5.19vh;
+    margin-bottom: 1vh;
+    margin-top: 8%;
+
+    &.form {
+      margin-top: 20px;
+    }
+    &.complete {
+      margin-top: 1vh;
+      margin-bottom: 0vh;
+      color: #7d78ab;
+    }
+    &.what-now {
+      margin-top: 0vh;
+      font-size: 4.3vh;
+    }
+  }
+  .buttons-container {
+    max-height: 20vh;
+    background: white;
+    border-radius: 36px 36px 0 0;
+    bottom: 0;
+    text-align: center;
+    margin-top: 20px;
+    padding: 25px 0;
+    
+    &.error {
+      background: #f8efef;
+
+      .error-title {
+        color: #eb5757;
+        font-weight: bold;
+        margin: 0;
+        margin-bottom: 2vh;
+        font-size: 2vh;
+        &.hide {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .input-phone {
+    box-shadow: 0px 1.13458px 2.21381px rgba(91, 83, 220, 0.0196802),
+      0px 2.72654px 5.32008px rgba(91, 83, 220, 0.0282725), 0px 5.13384px 10.0172px rgba(91, 83, 220, 0.035),
+      0px 9.15789px 17.869px rgba(91, 83, 220, 0.0417275), 0px 17.1288px 33.4221px rgba(91, 83, 220, 0.0503198),
+      0px 41px 80px rgba(91, 83, 220, 0.07);
+    border-radius: 10px;
+    height: 7vh;
+    width: 75%;
+    border-color: transparent;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 5%;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 4vh;
+    background-origin: content-box;
+    background-image: url("../../../assets/icons/pink/pink-call.png");
+
+    &.error {
+      border-color: #eb5757;
+      border-style: solid;
+      border-width: thin;
+    }
+  }
+  input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: lightgrey;
+    font-weight: 200;
+  }
+  .input-phone:focus {
+    outline: none !important;
+    border: thin solid black;
+    // box-shadow: 0 0 10px #719ECE;
+  }
+
+  .details {
+    text-align: right;
+    width: 80%;
+    max-height: 70%;
+    overflow: auto;
+    .error-msg {
+      font-size: 1.73vh;
+      color: red;
+      padding-right: 1vh;
+      padding-top: 0.5vh;
+    }
+
+    .sms-sign-up-container {
+      background: white;
+      box-shadow: 0px 3.99006px 4.78807px rgba(108, 99, 253, 0.0323),
+        0px 13.4018px 16.0821px rgba(108, 99, 253, 0.0476886), 0px 60px 72px rgba(108, 99, 253, 0.08);
+      border-radius: 10px;
+
+      font-size: 2vh;
+      padding: 1.6vh 1vh;
+      align-items: center;
+      display: flex;
+      margin-top: 20px;
+      width: 92%;
+      color: #4d45da;
+
+      .disabled {
+        color: grey;
+      }
+    }
+  }
+  .form-title {
+    font-size: 2.2vh;
+    line-height: 136%;
+    margin: 0;
+    color: #7d78ab;
+    margin-top: 2vh;
+    padding-bottom: 1vh;
+    padding-right: 1vh;
+  }
+
+  .details-input:focus {
+    outline: none !important;
+    border: thin solid black;
+  }
+
+  .send-again-label {
+    font-weight: bold;
+    font-size: 2vh;
+    line-height: 19px;
+    align-items: center;
+    color: #5b53dc;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    &:active {
+      color: #49446e;
+    }
+
+    &:disabled {
+      color: #b9b9b9;
+    }
+  }
+
+  .code-letters-container {
+    direction: ltr;
+    padding-bottom: 3vh;
+  }
+  .one-letter-input {
+    font-size: 4vh;
+    padding: 2px;
+    padding-bottom: 10px;
+    color: #5b53dc;
+    border-bottom-color: lightgray;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 40px;
+    height: 30px;
+    background-color: transparent;
+    margin: 10px;
+    outline: none;
+    text-align: center;
+    &.filled {
+      border-bottom-color: #5b53dc;
+    }
+    &.error {
+      color: #eb5757;
+      border-bottom-color: #eb5757;
+    }
+  }
+  .text-field {
+    // font-size: 3vh;
+    border-bottom-color: purple;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 70%;
+    // height: 100px;
+    background-color: transparent;
+    margin: 10px;
+    outline: none;
+    text-align: center;
+  }
+
+  .main-image {
+    max-height: 35%;
+    width: auto;
+    background-color: transparent;
+    margin-bottom: 30px;
+    margin-top: 10%;
+  }
+
+  .titles-container {
+    width: 80%;
+    .sub-title {
+      font-size: 2.5vh;
+      font-weight: normal;
+      line-height: 5vh;
+      color: #49446e;
+    }
+  }
+  .whatsapp-text {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    line-height: 27px;
+    color: #49446e;
+    margin-bottom: 4vh;
+
+    &.bottom {
+      margin-top: 2vh;
+    }
+  }
+  .sub-title {
+    font-size: 2.2vh;
+    line-height: 3vh;
+    color: #49446e;
+  }
+
+  .MuiCircularProgress-colorPrimary {
+    color: "black";
+  }
+
+  .version-number {
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    font-size: 10px;
+  }
+}
+
+.essence-description {
+  font-size: 0.8em;
+  color: #34314f;
+  line-height: 1.4;
+  text-align: right;
+  padding: 0 2em;
+}
+.essence-title {
+  color: #49446e;
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 0;
+  margin-top: 1em;
+}
+
+.sub-title2 {
+  color: #49446e;
+  text-align: right;
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 2em;
+}
+
+// We use this part to remove the 'arrows' in <input type="number" />. We use this in OTP validation
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.single-btn-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
